@@ -11,10 +11,6 @@ const openTab = (tabName) => {
     tabContent.classList.remove("active-tab");
   }
 
-  for (tabNav of tabNavs) {
-    tabNav.classList.remove("active-nav");
-  }
-
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabName).classList.add("active-tab");
 };
