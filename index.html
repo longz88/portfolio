@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!------- header ---------->
+      <div id="header">
+        <div class="container">
+          <ul class="nav-bar">
+            <li>
+              <a href="#header" class="active-nav">Home</a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="header-text">
+            <p>FontEnd Intern</p>
+            <h1>Hi, I'm Chu <span>Long</span></h1>
+          </div>
+        </div>
+      </div>
+
+      <!------ About ------>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./img/img-avatar.png" alt="" />
+            </div>
+
+            <div class="about-col-2">
+              <h1 class="sub-title">About me</h1>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
+                dolor modi explicabo praesentium sint dicta in veniam, est alias
+                quasi natus minima optio deleniti rerum nostrum, hic repudiandae
+                totam, possimus quo sapiente cumque iure perspiciatis amet? Quos
+                nostrum iste eum!
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="openTab('education')">
+                  Education
+                </p>
+              </div>
+
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <span>Font-end :</span>
+                  <li>- HTML</li>
+                  <li>- CSS</li>
+                  <li>- JS</li>
+                  <li>- ReactJs</li>
+                </ul>
+              </div>
+
+              <div class="tab-contents" id="education">
+                <ul>
+                  <span>Cao đẳng Công Thương Hà Nội</span>
+                  <li>2022 - present</li>
+                  <li>Công nghệ thông tin</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------Project ------>
+      <div id="project">
+        <div class="container">
+          <h1 class="sub-title">My Project</h1>
+          <div class="my-project-list">
+            <div class="my-project">
+              <img src="./img/web-img.png" alt="" />
+              <div class="player">
+                <h3>Web ecommerce</h3>
+                <p>
+                  An ecommerce business sells products or services to customers
+                  over the internet.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="my-project">
+              <img src="./img/photo-1700664957873-eed7960589f5.avif" alt="" />
+              <div class="player">
+                <h3>Web ecommerce</h3>
+                <p>
+                  An ecommerce business sells products or services to customers
+                  over the internet.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+
+            <div class="my-project">
+              <img src="./img/photo-1700925338124-feb7c3dae1d9.avif" alt="" />
+              <div class="player">
+                <h3>Web ecommerce</h3>
+                <p>
+                  An ecommerce business sells products or services to customers
+                  over the internet.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn">See more</a>
+        </div>
+      </div>
+
+      <!------Contact------->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p>
+                <a href="mailto:chuthanhlong2k2@gmail.com"
+                  ><i class="fa-solid fa-paper-plane"></i>
+                  chuthanhlong2k2@gmail.com</a
+                >
+              </p>
+              <p>
+                <a href="tel:+84763325145"
+                  ><i class="fa-solid fa-phone"></i> 0763325145</a
+                >
+              </p>
+
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100094449246825"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+
+                <a href="https://github.com/longz88" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+
+              <a href="./img/CV intern.pdf" download class="btn btn2"
+                >DownLoad CV</a
+              >
+            </div>
+
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  placeholder="Your message"
+                  rows="6"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===JS=== -->
+    <script src="index.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzYUvCFzZ-SqMuEyhZC-0xQAmuU9yWhXHS5LVQoQX8QnEz-r_jOTY2a1aa3minFip1t/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
